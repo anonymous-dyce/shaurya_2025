@@ -138,3 +138,91 @@ My name is Shaurya and I am in 11th grade.
     }
   </style>
 </head>
+
+FE!N, FE!N, FE!N, FE!N FE!N...
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Redirect Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        .redirect-button {
+            padding: 10px 20px;
+            background-color: #007BFF; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .redirect-button:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+    </style>
+</head>
+<body>
+    <button class="redirect-button" onclick="window.location.href='https://www.youtube.com/watch?v=B9synWjqBn8'">The Best Hype Song</button>
+</body>
+</html>
+
+This is a list of Bollywood songs, as well as some personal favorite Hindi songs; Bollywood songs incorporate both modernized and cultural Indian music, and they are my favorite category of songs:
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Redirect Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        .redirect-button2 {
+            padding: 10px 20px;
+            background-color: #007BFF; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .redirect-button2:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+    </style>
+</head>
+<body>
+    <button class="redirect-button2" onclick="window.location.href='https://open.spotify.com/playlist/55cg4nkj03sCr4SgkP57D9'">Fav Bollywood Songs</button>
+</body>
+</html>
+
+This is a button that helps you finally be done with programming in this class:
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Action Button</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        .no-action-button {
+            padding: 10px 20px;
+            background-color: #007BFF; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+
+        .no-action-button:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+    </style>
+</head>
+<body>
+    <button class="no-action-button">THE ULTIMATE ESCAPE FROM CSP</button>
+</body>
+</html>
+(P.S. it doesn't lead anywhere because you are never 'done' with programming in this class, you always have something to code!)
+
