@@ -139,7 +139,7 @@ My name is Shaurya and I am in 11th grade.
   </style>
 </head>
 
-FE!N, FE!N, FE!N, FE!N FE!N...
+This is a song by one of my favorite Hindi Rappers named Badshah, where he features an American Rapper (Lil Baby) and a Spanish Rapper (J Balvin). CAUTION: Explicit lyrics by Lil Baby & single F-word in the very beginning.
 
 <html lang="en">
 <head>
@@ -164,7 +164,7 @@ FE!N, FE!N, FE!N, FE!N FE!N...
     </style>
 </head>
 <body>
-    <button class="redirect-button" onclick="window.location.href='https://www.youtube.com/watch?v=B9synWjqBn8'">The Best Hype Song</button>
+    <button class="redirect-button" onclick="window.location.href='https://www.youtube.com/watch?v=sPn2HP8cAbo'">Voodoo (Lil Baby Remix)</button>
 </body>
 </html>
 
