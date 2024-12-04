@@ -5,133 +5,95 @@ description: Home Page
 hide: true
 ---
 
-
-
 My name is Shaurya and I am in 11th grade.
 
 <html lang="en">
-
-<body>
-    <div class="dropdown">
-        <button class="dropbtn" onclick="toggleDropdown()">Directory</button>
-        <div class="dropdown-content" id="myDropdown">
-            <a href="http://127.0.0.1:4100/shaurya_2025/about/">About</a>
-            <a href="http://127.0.0.1:4100/shaurya_2025/README4YML.html">Readme</a>
-            <a href="http://127.0.0.1:4100/shaurya_2025/blogs/">Blogs</a>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
-      transition: background-color 1s ease; /* Smooth transition for background color */
+      background: black;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
     }
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.8); /* White overlay */
-      display: none; /* Hide overlay initially */
-      z-index: 9998; /* Behind the loader */
-      transition: opacity 1s ease; /* Smooth transition for the overlay */
+    .button {
+      background-color: #ff4d4d !important;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      display: inline-block;
+      padding: 15px 20px;
+      border-radius: 20px;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      text-align: center;
+      margin-top: 10px; /* Adds space above the button */
     }
-    .loader {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      display: none; /* Hide loader initially */
+    .button:hover {
+      transform: scale(1.05);
+      background-color: #e60000 !important;
     }
-    .dots {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
+    .button:active {
+      transform: scale(0.95);
+      background-color: #b30000 !important;
     }
-    .dot {
-      width: 20px; /* Size of the dots */
-      height: 20px;
-      border-radius: 50%;
-      background-color: #4CAF50; /* Dot color */
-      animation: bounce 0.6s infinite alternate; /* Bounce animation */
-    }
-    .dot:nth-child(1) { animation-delay: 0s; }
-    .dot:nth-child(2) { animation-delay: 0.2s; }
-    .dot:nth-child(3) { animation-delay: 0.4s; }
-    @keyframes bounce {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-15px); }
-    }
-    .button-custom {
-      background-color: #2b669a; /* Main theme color */
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    .button-custom:hover {
-      background-color: #1d4f73; /* Darker shade for hover */
-      transform: scale(1.05); /* Slightly enlarges button on hover */
-    }
-    .button-custom:active {
-      background-color: #163d59; /* Even darker on click */
-      transform: scale(0.98); /* Shrinks button slightly on click */
-    }
-    .button-custom:focus {
-      outline: none;
-      box-shadow: 0 0 5px #2b669a; /* Adds a shadow on focus */
+    /* Add margin above paragraphs */
+    p {
+      margin-top: 40px; /* Adds space above paragraphs */
     }
     .dropdown {
       position: relative;
       display: inline-block;
+      margin-bottom: 140px;
     }
     .dropdown button {
-      background-color: #3498db;
+      background-color: #ff4d4d !important;
       color: white;
-      padding: 14px 20px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      display: inline-block;
+      padding: 15px 20px;
+      border-radius: 5px;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      text-align: center;
+      margin-top: 20px; /* Adds space above the dropdown button */
     }
     .dropdown button:hover {
-      background-color: #2980b9;
+      transform: scale(1.05);
+      background-color: #e60000 !important;
+    }
+    .dropdown button:active {
+      transform: scale(0.95);
+      background-color: #e60000 !important;
     }
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #34495e;
+      background-color: blue !important;
+      color: white !important;
       min-width: 160px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
+      border-radius: 5px;
       z-index: 1;
       opacity: 0;
       transform: translateY(10px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      transition: transform 0.2s ease, background-color 0.2s ease, color;
     }
     .dropdown-content a {
-      color: white;
+      color: white !important;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      transition: transform 0.2s ease, background-color 0.2s ease, color;
     }
     .dropdown-content a:hover {
-      background-color: #1abc9c;
+      transform: scale(1.05);
+      background-color: turquoise !important;
+      color: black !important
     }
     .dropdown:hover .dropdown-content {
       display: block;
@@ -141,90 +103,28 @@ My name is Shaurya and I am in 11th grade.
   </style>
 </head>
 
-This is a song by one of my favorite Hindi Rappers named Badshah, where he features an American Rapper (Lil Baby) and a Spanish Rapper (J Balvin). CAUTION: Explicit lyrics by Lil Baby & single F-word in the very beginning.
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Redirect Example</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <style>
-        .redirect-button {
-            padding: 10px 20px;
-            background-color: #007BFF; /* Button color */
-            color: white; /* Text color */
-            border: none; /* No border */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: background-color 0.3s; /* Smooth hover effect */
-        }
-
-        .redirect-button:hover {
-            background-color: #0056b3; /* Darker color on hover */
-        }
-    </style>
-</head>
 <body>
-    <button class="redirect-button" onclick="window.location.href='https://www.youtube.com/watch?v=sPn2HP8cAbo'">Voodoo (Lil Baby Remix)</button>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">Directory</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="http://127.0.0.1:4100/shaurya_2025/about/">About</a>
+      <a href="http://127.0.0.1:4100/shaurya_2025/README4YML.html">Readme</a>
+      <a href="http://127.0.0.1:4100/shaurya_2025/blogs/">Blogs</a>
+    </div>
+  </div>
+
+  <p>This is a song by one of my favorite Hindi Rappers named Badshah, where he features an American Rapper (Lil Baby) and a Spanish Rapper (J Balvin). CAUTION: Explicit lyrics by Lil Baby & single F-word in the very beginning.</p>
+
+  <button class="button" onclick="window.location.href='https://www.youtube.com/watch?v=sPn2HP8cAbo'">Voodoo (Lil Baby Remix)</button>
+
+  <p>This is a list of Bollywood songs, as well as some personal favorite Hindi songs; Bollywood songs incorporate both modernized and cultural Indian music, and they are my favorite category of songs:</p>
+
+  <button class="button" onclick="window.location.href='https://open.spotify.com/playlist/55cg4nkj03sCr4SgkP57D9'">Fav Bollywood Songs</button>
+
+  <p>This is a button that helps you finally be done with programming in this class:</p>
+  
+  <button class="button">THE ULTIMATE ESCAPE FROM CSP</button>
+
+  <p>(P.S. it doesn't lead anywhere because you are never 'done' with programming in this class, you always have something to code!)</p>
+
 </body>
-</html>
-
-This is a list of Bollywood songs, as well as some personal favorite Hindi songs; Bollywood songs incorporate both modernized and cultural Indian music, and they are my favorite category of songs:
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Redirect Example</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <style>
-        .redirect-button2 {
-            padding: 10px 20px;
-            background-color: #007BFF; /* Button color */
-            color: white; /* Text color */
-            border: none; /* No border */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: background-color 0.3s; /* Smooth hover effect */
-        }
-
-        .redirect-button2:hover {
-            background-color: #0056b3; /* Darker color on hover */
-        }
-    </style>
-</head>
-<body>
-    <button class="redirect-button2" onclick="window.location.href='https://open.spotify.com/playlist/55cg4nkj03sCr4SgkP57D9'">Fav Bollywood Songs</button>
-</body>
-</html>
-
-This is a button that helps you finally be done with programming in this class:
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No Action Button</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <style>
-        .no-action-button {
-            padding: 10px 20px;
-            background-color: #007BFF; /* Button color */
-            color: white; /* Text color */
-            border: none; /* No border */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: background-color 0.3s; /* Smooth hover effect */
-        }
-
-        .no-action-button:hover {
-            background-color: #0056b3; /* Darker color on hover */
-        }
-    </style>
-</head>
-<body>
-    <button class="no-action-button">THE ULTIMATE ESCAPE FROM CSP</button>
-</body>
-</html>
-(P.S. it doesn't lead anywhere because you are never 'done' with programming in this class, you always have something to code!)
-
