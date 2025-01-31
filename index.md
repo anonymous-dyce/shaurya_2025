@@ -74,7 +74,7 @@ My name is Shaurya and I am in 11th grade.
       position: absolute;
       background-color: blue !important;
       color: white !important;
-      min-width: 160px;
+      min-width: 350px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
       z-index: 1;
@@ -107,8 +107,8 @@ My name is Shaurya and I am in 11th grade.
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown()">Directory</button>
     <div class="dropdown-content" id="myDropdown">
-      <a href="http://127.0.0.1:4100/shaurya_2025/about/">About</a>
-      <a href="http://127.0.0.1:4100/shaurya_2025/README4YML.html">Readme</a>
+      <a href="http://127.0.0.1:4100/shaurya_2025/studentCars/">Student Cars (Sprint 3)</a>
+      <a href="http://127.0.0.1:4100/shaurya_2025/binary_history">The History of Binary... (Sprint 4 & 5)</a>
       <a href="http://127.0.0.1:4100/shaurya_2025/blogs/">Blogs</a>
     </div>
   </div>
