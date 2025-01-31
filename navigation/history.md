@@ -94,7 +94,7 @@ permalink: /binary_history/
 <textarea placeholder="Enter the event description here..." id="eventDescription"></textarea>
 <p></p>
 <button class="regularButton" onclick="addEvent()">Submit Event</button>
-<p>NOTE: The function won't work because the addEvent() function is not included as onclick in the button</p>
+<p></p>
 <button class="regularButton"><a href="{{site.baseurl}}/binary_history/blog">Check out my Blog!</a></button>
 <script>
     // NOTE: THIS CODE IS NOT THE ACTUAL CODE I USED TO CONNECT TO API, IT WILL NOT SAVE ANY ENTERED DATA
