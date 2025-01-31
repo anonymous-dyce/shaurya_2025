@@ -93,8 +93,74 @@ permalink: /binary_history/
 <p></p>
 <textarea placeholder="Enter the event description here..." id="eventDescription"></textarea>
 <p></p>
-<button class="regularButton" >Submit Event</button>
+<button class="regularButton" onclick="addEvent()">Submit Event</button>
 <p>NOTE: The function won't work because the addEvent() function is not included as onclick in the button</p>
 <button class="regularButton"><a href="{{site.baseurl}}/binary_history/blog">Check out my Blog!</a></button>
-
+<script>
+    // NOTE: THIS CODE IS NOT THE ACTUAL CODE I USED TO CONNECT TO API, IT WILL NOT SAVE ANY ENTERED DATA
+        // Default events data
+        const defaultEvents = [
+            { description: "Gottfried Wilhelm Leibniz conceives the idea of the binary numeral system in his essay 'Explication de l'Arithmétique Binaire'.", year: "1679" },
+            { description: "Leibniz formally publishes his work on the binary numeral system in 'Explication de l'Arithmétique Binaire'.", year: "1703" },
+            { description: "George Boole develops Boolean algebra, which becomes foundational for binary logic.", year: "1847" },
+            { description: "George Boole publishes 'An Investigation of the Laws of Thought', further detailing Boolean algebra.", year: "1854" },
+            { description: "Claude Shannon applies Boolean algebra to design electronic circuits in his master's thesis.", year: "1937" },
+            { description: "John Atanasoff and Clifford Berry create the Atanasoff-Berry Computer (ABC), which uses binary.", year: "1939" },
+            { description: "John von Neumann outlines the architecture of modern computers, emphasizing binary.", year: "1945" },
+            { description: "The ENIAC computer is completed, though it uses decimal rather than binary.", year: "1946" },
+            { description: "Claude Shannon publishes 'A Mathematical Theory of Communication', linking binary to information theory.", year: "1948" },
+            { description: "Alan Turing's work on binary-based computation contributes to the development of modern computer science.", year: "1950" },
+            { description: "The UNIVAC I, the first commercial computer, uses binary in its operations.", year: "1951" },
+            { description: "Binary-coded decimal (BCD) becomes widely adopted for numerical representation in computing.", year: "1960" },
+            { description: "ASCII (American Standard Code for Information Interchange) is introduced, using binary to represent characters.", year: "1964" },
+            { description: "The UNIX operating system is created, relying heavily on binary representations.", year: "1969" },
+            { description: "Intel releases the 4004 microprocessor, the first commercially available processor based on binary.", year: "1971" },
+            { description: "IBM introduces the PC, making binary-based computing accessible to the public.", year: "1980" },
+            { description: "The World Wide Web is introduced, built upon binary protocols and systems.", year: "1991" },
+            { description: "The Y2K problem highlights the importance of binary in year representation and storage.", year: "2000" },
+            { description: "Bitcoin, based on binary and cryptographic principles, is introduced.", year: "2008" }
+        ];
+        // Function to display binary history from default events
+        function fetchAndDisplayBinaryHistory() {
+            const data = defaultEvents;
+            data.sort((a, b) => a.year - b.year);
+            const historyContainer = document.getElementById('binary-history');
+            historyContainer.innerHTML = '';
+            data.forEach((event) => {
+                const eventDiv = document.createElement('div');
+                eventDiv.classList.add('event');
+                const title = document.createElement('h3');
+                title.textContent = event.year;
+                const description = document.createElement('p');
+                description.textContent = event.description;
+                eventDiv.appendChild(title);
+                eventDiv.appendChild(description);
+                historyContainer.appendChild(eventDiv);
+            });
+        }
+        // Function to add a new event
+        function addEvent() {
+            const year = document.getElementById('eventYear').value.trim();
+            const description = document.getElementById('eventDescription').value.trim();
+            if (!year || !description) {
+                alert('Please fill in both the year and event description.');
+                return;
+            }
+            const eventDiv = document.createElement('div');
+            eventDiv.classList.add('event');
+            const title = document.createElement('h3');
+            title.textContent = year;
+            const descriptionElement = document.createElement('p');
+            descriptionElement.textContent = description;
+            eventDiv.appendChild(title);
+            eventDiv.appendChild(descriptionElement);
+            const historyContainer = document.getElementById('binary-history');
+            historyContainer.appendChild(eventDiv);
+            document.getElementById('eventYear').value = '';
+            document.getElementById('eventDescription').value = '';
+        }
+        // Initial fetch to display default history
+        fetchAndDisplayBinaryHistory();
+    </script>
 </body>
+</html>
