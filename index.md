@@ -46,7 +46,7 @@ My name is Shaurya and I am in 11th grade.
     .dropdown {
       position: relative;
       display: inline-block;
-      margin-bottom: 140px;
+      margin-bottom: 200px;
     }
     .dropdown button {
       background-color: #ff4d4d !important;
@@ -107,9 +107,10 @@ My name is Shaurya and I am in 11th grade.
   <div class="dropdown">
     <button class="dropbtn" onclick="toggleDropdown()">Directory</button>
     <div class="dropdown-content" id="myDropdown">
-      <a href="http://127.0.0.1:4100/shaurya_2025/studentCars/">Student Cars (Sprint 3)</a>
-      <a href="http://127.0.0.1:4100/shaurya_2025/binary_history">The History of Binary... (Sprint 4 & 5)</a>
-      <a href="http://127.0.0.1:4100/shaurya_2025/blogs/">Blogs</a>
+      <a href="{{site.baseurl}}/studentCars/">Student Cars (Sprint 3)</a>
+      <a href="{{site.baseurl}}/binary_history">The History of Binary... (Sprint 4 & 5)</a>
+      <a href="{{site.baseurl}}/trials/">Binary Trials - Partners Game (Sprint 6)</a>
+      <a href="{{site.baseurl}}/blogs/">Blogs</a>
     </div>
   </div>
 
