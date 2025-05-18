@@ -18,7 +18,7 @@ Hi, my name is Shaurya Singh!
     - Online US History (Trimester 2&3)
 
 ## Personal
-- In my free time, I like to watch YouTube, ride my bike, tidy my house, code, and solve math problems
+- In my free time, I like to watch YouTube, ride my bike, tidy my house, code, and listen to music
 - Favorite movie: Home Alone 3    
 - Favorite Song: I have way too many, but I like Bollywood & Hindi Rap
 - Favorite Food: Chicken Burger   
