@@ -19,9 +19,9 @@ Here is my performance in each section of the exam:
 | **Total**                 | **31 out of 42**                | **74%**     |
 
 
-The topics that I did not do well on were: 1.15 (String Manipulation), 2.4 (Nested if Statements) 2.8 (for loops), and 4.8 (ArrayList Methods). I need to work on these topics more thoroughly and improve in order to perform better on future MCQs and the AP Exam.
+The topics that I did not do well on were: 1.15 (String Manipulation), 2.4 (Nested if Statements), 2.8 (for loops), and 4.8 (ArrayList Methods). I need to work on these topics more thoroughly and improve in order to perform better on future MCQs and the AP Exam.
 
-However, the topics that I performed well on were 1.14 (Calling Instance Methods), 3.2 (Impact of Program Design), 3.5 (Methods: How to Write Them), and 4.3 (Array Creation and Access). These are areas of less concern and I only need to review and do some practice on these topics.
+However, the topics that I performed well on were 1.14 (Calling Instance Methods), 3.2 (Impact of Program Design), 3.5 (Methods: How to Write Them), and 4.3 (Array Creation and Access). These are areas of less concern, and I only need to review and do some practice on these topics.
 
 I reflected on my performance using the graphs and tables below. These will also help me prepare for future MC exams.
 
@@ -37,8 +37,16 @@ I reflected on my performance using the graphs and tables below. These will also
 
 <img src="{{ site.baseurl }}/images/csa_prex_mc.png">
 
-Although I had the same number of questions wrong for BI 2 and 4, I understood more of the questions in BI 2 than BI 4. BI 3 was roughly the same amount of questions not understood as BI 2, and each BI had one question where I did not understand the question or the concept.
+Although I had the same number of questions wrong for BI 2 and 4, I understood more of the questions in BI 2 than BI 4. BI 3 had roughly the same amount of questions not understood as BI 2, and each BI had one question where I did not understand the question or the concept.
 
 [Here is the link to my corrections and approach for each missed problem](https://github.com/anonymous-dyce/shaurya_2025/issues/12)
 
+## Reflection Timeline:
 
+At the beginning of the year, I came in with only my rusty CSP knowledge. I had not done any programming as I had gone to India over the summer, and I had to re-look at the code on my recent full-stack project, BioSKANZ. I did not know anything about Java whatsoever and was only content with the Python, SQLite, JavaScript, HTML, and API knowledge I already had.
+
+During the Tools sprint, I, Arnav, and Ahaan worked on creating new lessons on the open coding society site. I wanted to gain further experience from this sprint, so I worked on integrating Gemini into FRQ questions and having the questions serve as checkpoints between each lesson. I later moved the Gemini prompt/response system, including my API Key, to the spring backend to ensure protection of my key (continued in "cool feature" section). 
+
+During the Java fundamentals (CSA lessons) sprint, I made sure to do all popcorn and homework hacks, including some of the extra credit, as this will help me with my Java knowledge for the rest of the year. Also, it will greatly help me on my AP Exam; as I have already seen, it helped me with many of the questions on the Practice Exam.
+
+During the Frontend Quest sprint, I worked on submodule 1 (the overview of frontend). I created a module that was interactive (through FRQ and MC questions, as well as a Synergy Demo), appealing (through colorful styling, headers, and bullet points rather than paragraphs), and easy to understand (covered content at a CSSE/beginner-level CSP comprehension).
