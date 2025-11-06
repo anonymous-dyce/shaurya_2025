@@ -50,3 +50,17 @@ During the Tools sprint, I, Arnav, and Ahaan worked on creating new lessons on t
 During the Java fundamentals (CSA lessons) sprint, I made sure to do all popcorn and homework hacks, including some of the extra credit, as this will help me with my Java knowledge for the rest of the year. Also, it will greatly help me on my AP Exam; as I have already seen, it helped me with many of the questions on the Practice Exam.
 
 During the Frontend Quest sprint, I worked on submodule 1 (the overview of frontend). I created a module that was interactive (through FRQ and MC questions, as well as a Synergy Demo), appealing (through colorful styling, headers, and bullet points rather than paragraphs), and easy to understand (covered content at a CSSE/beginner-level CSP comprehension).
+
+### Highlighting Sprint 1 (includes the cool feature I worked on):
+
+Here is a table of the skills I gained:
+
+| **Skill** | **Description** | **Future Focus** |
+|------------|-----------------|------------------|
+| Gemini API Integration | Learned to connect Gemini API to backend systems for AI-powered responses, enabling smart feedback. | Integrate Gemini features into more personalized learning platforms. |
+| Java Programming | Gained experience coding in Java to develop backend logic and handle user data. | Deepen understanding of data structures and backend optimization techniques. |
+| Java Tools (JDK, JBang) | Used JDK for compiling and running Java applications and explored JBang for Jupyter Notebooks. | Leverage JBang for prototyping of backend utilities. |
+| Spring Boot Framework | Built RESTful API endpoint using Spring Boot to handle routes and support full-stack app functionality. | Learn more about how the spring repository works, including maven, Main.java, and databases. |
+| Frontend–Backend Integration | Connected web frontends to Spring Boot backend, managing data flow. | Explore modern frontend frameworks like React for real-time updates and API communication. |
+
+Overall, I got Gemini to work making a fetch request to backend (by sending the FRQ question and student response as instances in a data class), processing the data through a Gemini controller file in the backend, receiving a response from Gemini after entering the data as part of a prompt, sending Gemini's response to frontend as an instance within the same data class, and processing Gemini's response to appear in frontend. I will integrate Gemini whenever I get the chance for future sprints and help the current team assigned for Gemini.
