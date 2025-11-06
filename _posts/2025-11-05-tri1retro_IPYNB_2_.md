@@ -78,3 +78,9 @@ In the next sprint, I would like to implement the Java that I have learned and g
 If we can develop a full stack project that relies on springboot, I can also look to integrating Gemini as a feature other than for FRQs. Gemini can be used for a vast amount of requests, and finding different ways to integrate it will allow me to get experience with AI.
 
 I would like to go over Big Ideas 2, 3, and/or 4 in the future. We can work in trios and have panera meetups related to the lesson again, but this time we could make projects specifically related to the big ideas. For instance, we could make a quiz game on class creation, or a simulator for learning data collection methods.
+
+## Analytics Review:
+
+<img src="{{ site.baseurl }}/images/csa_tri1_analytics.png">
+
+Overall, I feel my analytics have been better this trimester than last year. I am actually committing a lot more of my changes rather than committing lots of files at once, and my commit history is looking decent.
