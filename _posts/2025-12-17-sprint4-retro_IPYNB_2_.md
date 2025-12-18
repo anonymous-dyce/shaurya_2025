@@ -26,3 +26,21 @@ Here is a table of the skills I gained:
 | Spring Boot Framework | Built RESTful API endpoint using Spring Boot to handle routes and support full-stack app functionality. | Get spring to connect with frontend for user preferences recommendations and potentially create lessons on how to fix different types of backend errors. |
 | Frontend–Backend Integration | Connected web frontends to Spring Boot backend, managing data flow. | Explore modern frontend frameworks like React for real-time updates and API communication. |
 | Helping CSSE/CSP | Created lessons to help CSSE students code their own calculator as part of onboarding adventure. Integrated Gemini into JavaScript lessons for CSP for real-time feedback. | Make lessons for math, such as Trigonometry and Precalculus (I am currently figuring out which problems and topics will be most efficient to teach). |
+
+### Feature:
+
+While Trimester 2 was going on, I took out time throughout each week to work on my best feature, integrating the Gemini API into the profile preferences to enable user personalization. Users interact with a dedicated "Ask AI" interface, providing natural language descriptions—such as aesthetic moods ("modern," "playful"), specific color theory terms (tints, hues), and thematic concepts—to articulate their ideal site theme. This moves customization beyond static menus, allowing students to instantly generate themes tailored to their creative vision.
+
+The user's prompt is transmitted from the frontend to the Spring backend. The backend then constructs a detailed prompt, including the user's input alongsideconstraints (like the approved list of seven font families: Inter, Roboto, etc.), and directs Gemini to act as a UI/UX design assistant.
+
+Gemini's output includes the recommended hex codes for key elements (background, buttons, text, selection highlights) and the ideal font family. This generated theme configuration is returned to the frontend's "Response Box," allowing the user to review, confirm, and apply a sophisticated, algorithmically-generated theme based purely on their textual preferences.
+
+### Future:
+
+In the next sprint, I would like to implement the Java that I have learned and get to use springboot, rather than simply working on frontend features. This will help me expand on my programming knowledge and better prepare for the AP Exam. 
+
+I want to also ensure spring doesn't crash due to issues with the database, and that the frontend-to-backend connection doesn't face any issues, such as CORS. I felt like these two were the biggest issues I faced when connecting pages to spring, and do not want to constantly face these issues. I could make a troubleshooting blog for how to tackle several types of issues (in spring and APIs), so that other people don't face similar (or other) issues as well.
+
+## Analytics Review:
+
+Overall, I feel my contributions have been better these past two weeks as I have been coding and writing lessons. I am actually committing a lot more of my changes rather than committing lots of files at once, and my commit history is looking decent. Because of the holidays and working more on planning rather than coding, my commits are a lot less in November.
